@@ -4,7 +4,6 @@ import pytest
 
 from checkout import Checkout
 
-
 def test_charges_the_payment_gateway_and_reports_paid():
     fake_payment_gateway = Mock()
     fake_payment_gateway.charge.return_value = True
